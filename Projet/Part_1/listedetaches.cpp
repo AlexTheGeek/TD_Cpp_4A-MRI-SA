@@ -146,6 +146,7 @@ bool ListeDeTache::TraiterTache(){
                 }
                 this->prochain = tmp_id;
             }
+            delete tmp_liste;
             return true;
         }
         else {
