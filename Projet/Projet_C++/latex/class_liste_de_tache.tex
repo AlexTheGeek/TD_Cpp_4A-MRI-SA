@@ -1,0 +1,255 @@
+\hypertarget{class_liste_de_tache}{}\doxysection{Référence de la classe Liste\+De\+Tache}
+\label{class_liste_de_tache}\index{ListeDeTache@{ListeDeTache}}
+
+
+Ensemble des Tâches, une class \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}} définit par un max (int), prochain (int), nb (int) et un tableau Liste de \mbox{\hyperlink{class_tache}{Tache}}.  
+
+
+
+
+{\ttfamily \#include $<$listedetaches.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_liste_de_tache_acad7fbb9244c033524ecaf0f56d2b389}\label{class_liste_de_tache_acad7fbb9244c033524ecaf0f56d2b389}} 
+{\bfseries Liste\+De\+Tache} ()
+\begin{DoxyCompactList}\small\item\em Construction d\textquotesingle{}un nouvel objet \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_liste_de_tache_af43a7379151e82ced23dc4d0e1db1aa0}{Liste\+De\+Tache}} (int, \mbox{\hyperlink{class_tache}{Tache}})
+\begin{DoxyCompactList}\small\item\em Construction d\textquotesingle{}un nouvel objet \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}} à partir d\textquotesingle{}un max et d\textquotesingle{}une tâche passés en paramètre. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_liste_de_tache_ad7cabb81d8c80e154f433d2965fd24b7}{Liste\+De\+Tache}} (const \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}} \&)
+\begin{DoxyCompactList}\small\item\em Construction d\textquotesingle{}un nouvel object \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}} par copie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_liste_de_tache_aec68e550f1e7f470adb577e04bfdebac}\label{class_liste_de_tache_aec68e550f1e7f470adb577e04bfdebac}} 
+virtual {\bfseries $\sim$\+Liste\+De\+Tache} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de l\textquotesingle{}objet de \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_liste_de_tache_a9334c0fac362aeb380f7ea46be6387d0}{get\+Max}} ()
+\begin{DoxyCompactList}\small\item\em Accesseur du nombre maximum de tâche accepté dans la liste. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_liste_de_tache_a6ddb53044baf190b8c27f645a11c14e3}{get\+Prochain}} ()
+\begin{DoxyCompactList}\small\item\em Accesseur de l\textquotesingle{}ID de la prochaine tâche à traiter. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_liste_de_tache_ad25f8a817c37ffab6605a3d2668484e8}{get\+Nb}} ()
+\begin{DoxyCompactList}\small\item\em Accesseur du nombre de tâche dans la Liste. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tache}{Tache}} $\ast$ \mbox{\hyperlink{class_liste_de_tache_a61cee62a36bd333b0416be8bb66ecf84}{get\+Liste}} ()
+\begin{DoxyCompactList}\small\item\em Accesseur de la Liste de la Class \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_liste_de_tache_a2b812ad18731f56b47ec734cf36a351e}{Ajouter\+Tache}} (\mbox{\hyperlink{class_tache}{Tache}})
+\begin{DoxyCompactList}\small\item\em Ajout d\textquotesingle{}une tâche à la suite dans la liste de tâche. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_liste_de_tache_a37375cadb9ac12004c25826f294fe154}{Traiter\+Tache}} ()
+\begin{DoxyCompactList}\small\item\em Traitement de la prochaine tâche et sa suppression suite à son traitement correct. Pour un traitement un correct pas de suppression de la tâche dans la Liste. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tache}{Tache}} \mbox{\hyperlink{class_liste_de_tache_a79ff35632fabb7a481ecc8b2a9d134c6}{operator\mbox{[}$\,$\mbox{]}}} (int const)
+\begin{DoxyCompactList}\small\item\em Récupération de la ième tâche par surchage de \mbox{[}\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}} \& \mbox{\hyperlink{class_liste_de_tache_a740811298199bb3c1d321b66a6ff0c7f}{operator+=}} (const \mbox{\hyperlink{class_tache}{Tache}} \&)
+\begin{DoxyCompactList}\small\item\em Ajout d\textquotesingle{}un tâche par surcharge de l\textquotesingle{}opération +=. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_liste_de_tache_adf652c4131ab4b4c3da214e65ede0ff7}{operator-\/-\/}} (int)
+\begin{DoxyCompactList}\small\item\em Traitement de la prochaine tâche avec l\textquotesingle{}opérateur --. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_liste_de_tache_a569ab43782240ee117f092bec022e7b8}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}} \&lt)
+\begin{DoxyCompactList}\small\item\em Operateur d\textquotesingle{}affichage d\textquotesingle{}une \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Ensemble des Tâches, une class \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}} définit par un max (int), prochain (int), nb (int) et un tableau Liste de \mbox{\hyperlink{class_tache}{Tache}}. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_liste_de_tache_af43a7379151e82ced23dc4d0e1db1aa0}\label{class_liste_de_tache_af43a7379151e82ced23dc4d0e1db1aa0}} 
+\index{ListeDeTache@{ListeDeTache}!ListeDeTache@{ListeDeTache}}
+\index{ListeDeTache@{ListeDeTache}!ListeDeTache@{ListeDeTache}}
+\doxysubsubsection{\texorpdfstring{ListeDeTache()}{ListeDeTache()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Liste\+De\+Tache\+::\+Liste\+De\+Tache (\begin{DoxyParamCaption}\item[{int}]{m,  }\item[{\mbox{\hyperlink{class_tache}{Tache}}}]{t }\end{DoxyParamCaption})}
+
+
+
+Construction d\textquotesingle{}un nouvel objet \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}} à partir d\textquotesingle{}un max et d\textquotesingle{}une tâche passés en paramètre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em m} & le nombre maximum que la liste peut recevoir de tâche \\
+\hline
+{\em t} & première tâche de la liste \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_liste_de_tache_ad7cabb81d8c80e154f433d2965fd24b7}\label{class_liste_de_tache_ad7cabb81d8c80e154f433d2965fd24b7}} 
+\index{ListeDeTache@{ListeDeTache}!ListeDeTache@{ListeDeTache}}
+\index{ListeDeTache@{ListeDeTache}!ListeDeTache@{ListeDeTache}}
+\doxysubsubsection{\texorpdfstring{ListeDeTache()}{ListeDeTache()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Liste\+De\+Tache\+::\+Liste\+De\+Tache (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}} \&}]{lt }\end{DoxyParamCaption})}
+
+
+
+Construction d\textquotesingle{}un nouvel object \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}} par copie. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em lt} & \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}} passé en copie constante \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_liste_de_tache_a2b812ad18731f56b47ec734cf36a351e}\label{class_liste_de_tache_a2b812ad18731f56b47ec734cf36a351e}} 
+\index{ListeDeTache@{ListeDeTache}!AjouterTache@{AjouterTache}}
+\index{AjouterTache@{AjouterTache}!ListeDeTache@{ListeDeTache}}
+\doxysubsubsection{\texorpdfstring{AjouterTache()}{AjouterTache()}}
+{\footnotesize\ttfamily void Liste\+De\+Tache\+::\+Ajouter\+Tache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tache}{Tache}}}]{t }\end{DoxyParamCaption})}
+
+
+
+Ajout d\textquotesingle{}une tâche à la suite dans la liste de tâche. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & la tâche à ajouter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_liste_de_tache_a61cee62a36bd333b0416be8bb66ecf84}\label{class_liste_de_tache_a61cee62a36bd333b0416be8bb66ecf84}} 
+\index{ListeDeTache@{ListeDeTache}!getListe@{getListe}}
+\index{getListe@{getListe}!ListeDeTache@{ListeDeTache}}
+\doxysubsubsection{\texorpdfstring{getListe()}{getListe()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tache}{Tache}} $\ast$ Liste\+De\+Tache\+::get\+Liste (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Accesseur de la Liste de la Class \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}}. 
+
+\begin{DoxyReturn}{Renvoie}
+Tache$\ast$ un tableau de Tâche correspondant à la Liste 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_liste_de_tache_a9334c0fac362aeb380f7ea46be6387d0}\label{class_liste_de_tache_a9334c0fac362aeb380f7ea46be6387d0}} 
+\index{ListeDeTache@{ListeDeTache}!getMax@{getMax}}
+\index{getMax@{getMax}!ListeDeTache@{ListeDeTache}}
+\doxysubsubsection{\texorpdfstring{getMax()}{getMax()}}
+{\footnotesize\ttfamily int Liste\+De\+Tache\+::get\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Accesseur du nombre maximum de tâche accepté dans la liste. 
+
+\begin{DoxyReturn}{Renvoie}
+int le nombre maximum de tâche 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_liste_de_tache_ad25f8a817c37ffab6605a3d2668484e8}\label{class_liste_de_tache_ad25f8a817c37ffab6605a3d2668484e8}} 
+\index{ListeDeTache@{ListeDeTache}!getNb@{getNb}}
+\index{getNb@{getNb}!ListeDeTache@{ListeDeTache}}
+\doxysubsubsection{\texorpdfstring{getNb()}{getNb()}}
+{\footnotesize\ttfamily int Liste\+De\+Tache\+::get\+Nb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Accesseur du nombre de tâche dans la Liste. 
+
+\begin{DoxyReturn}{Renvoie}
+int le nombre de tâche dans cette liste 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_liste_de_tache_a6ddb53044baf190b8c27f645a11c14e3}\label{class_liste_de_tache_a6ddb53044baf190b8c27f645a11c14e3}} 
+\index{ListeDeTache@{ListeDeTache}!getProchain@{getProchain}}
+\index{getProchain@{getProchain}!ListeDeTache@{ListeDeTache}}
+\doxysubsubsection{\texorpdfstring{getProchain()}{getProchain()}}
+{\footnotesize\ttfamily int Liste\+De\+Tache\+::get\+Prochain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Accesseur de l\textquotesingle{}ID de la prochaine tâche à traiter. 
+
+\begin{DoxyReturn}{Renvoie}
+int l\textquotesingle{}ID (numéro dans le tableau) dans cette Liste de la prochaine tâche à traiter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_liste_de_tache_a740811298199bb3c1d321b66a6ff0c7f}\label{class_liste_de_tache_a740811298199bb3c1d321b66a6ff0c7f}} 
+\index{ListeDeTache@{ListeDeTache}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!ListeDeTache@{ListeDeTache}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}} \& Liste\+De\+Tache\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_tache}{Tache}} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Ajout d\textquotesingle{}un tâche par surcharge de l\textquotesingle{}opération +=. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & \mbox{\hyperlink{class_tache}{Tache}} qu\textquotesingle{}on souhaite ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}}\& La \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}} avec la Liste avec la tâche ajouté et le nombre de tâche incrémenté de 1 et la vérification de la prochaine priorité 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_liste_de_tache_adf652c4131ab4b4c3da214e65ede0ff7}\label{class_liste_de_tache_adf652c4131ab4b4c3da214e65ede0ff7}} 
+\index{ListeDeTache@{ListeDeTache}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!ListeDeTache@{ListeDeTache}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}}
+{\footnotesize\ttfamily bool Liste\+De\+Tache\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Traitement de la prochaine tâche avec l\textquotesingle{}opérateur --. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_liste_de_tache_a79ff35632fabb7a481ecc8b2a9d134c6}\label{class_liste_de_tache_a79ff35632fabb7a481ecc8b2a9d134c6}} 
+\index{ListeDeTache@{ListeDeTache}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ListeDeTache@{ListeDeTache}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tache}{Tache}} Liste\+De\+Tache\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int const}]{i }\end{DoxyParamCaption})}
+
+
+
+Récupération de la ième tâche par surchage de \mbox{[}\mbox{]}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em i} & le numéro de la tâche que l\textquotesingle{}on souhaite récupérer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{class_tache}{Tache}} La tâche qu\textquotesingle{}on souhaite récupéré par son numéro 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_liste_de_tache_a37375cadb9ac12004c25826f294fe154}\label{class_liste_de_tache_a37375cadb9ac12004c25826f294fe154}} 
+\index{ListeDeTache@{ListeDeTache}!TraiterTache@{TraiterTache}}
+\index{TraiterTache@{TraiterTache}!ListeDeTache@{ListeDeTache}}
+\doxysubsubsection{\texorpdfstring{TraiterTache()}{TraiterTache()}}
+{\footnotesize\ttfamily bool Liste\+De\+Tache\+::\+Traiter\+Tache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Traitement de la prochaine tâche et sa suppression suite à son traitement correct. Pour un traitement un correct pas de suppression de la tâche dans la Liste. 
+
+\begin{DoxyReturn}{Renvoie}
+true traitement correct 
+
+false traitement incorrect 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentation des fonctions amies et associées}
+\mbox{\Hypertarget{class_liste_de_tache_a569ab43782240ee117f092bec022e7b8}\label{class_liste_de_tache_a569ab43782240ee117f092bec022e7b8}} 
+\index{ListeDeTache@{ListeDeTache}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ListeDeTache@{ListeDeTache}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}} \&}]{lt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operateur d\textquotesingle{}affichage d\textquotesingle{}une \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em os} & référence sur un objet de type ostream \\
+\hline
+{\em lt} & La liste de tâche à afficher \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+ostream\& la référence de l\textquotesingle{}affichage de la \mbox{\hyperlink{class_liste_de_tache}{Liste\+De\+Tache}} 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{listedetaches_8h}{listedetaches.\+h}}\item 
+\mbox{\hyperlink{listedetaches_8cpp}{listedetaches.\+cpp}}\end{DoxyCompactItemize}

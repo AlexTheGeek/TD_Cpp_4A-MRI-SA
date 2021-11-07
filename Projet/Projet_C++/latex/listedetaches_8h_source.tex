@@ -1,0 +1,52 @@
+\hypertarget{listedetaches_8h_source}{}\doxysection{listedetaches.\+h}
+\mbox{\hyperlink{listedetaches_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef LISTEDETACHES\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define LISTEDETACHES\_H}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{tache_8h}{tache.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{comment}{//************************//}}
+\DoxyCodeLine{21 \textcolor{comment}{//** CLASS ListeDeTache **//}}
+\DoxyCodeLine{22 \textcolor{comment}{//************************//}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{28 \textcolor{keyword}{class }\mbox{\hyperlink{class_liste_de_tache}{ListeDeTache}}\{}
+\DoxyCodeLine{29     \textcolor{keyword}{private}:}
+\DoxyCodeLine{30         \textcolor{keywordtype}{int} max; \textcolor{comment}{//nombre maximum de tâche dans la liste}}
+\DoxyCodeLine{31         \textcolor{keywordtype}{int} prochain; \textcolor{comment}{//id (numéro dans la liste de tâche) de la prochaine tâche à traiter (avec une forte priorité)}}
+\DoxyCodeLine{32         \textcolor{keywordtype}{int} nb; \textcolor{comment}{//nombre de tâche dans la Liste}}
+\DoxyCodeLine{33         \mbox{\hyperlink{class_tache}{Tache}} *Liste; \textcolor{comment}{//Tableau de Tâches}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keyword}{public}:}
+\DoxyCodeLine{36     \textcolor{comment}{//constructeurs}}
+\DoxyCodeLine{37         \mbox{\hyperlink{class_liste_de_tache_acad7fbb9244c033524ecaf0f56d2b389}{ListeDeTache}}(); \textcolor{comment}{//de base}}
+\DoxyCodeLine{38         \mbox{\hyperlink{class_liste_de_tache_acad7fbb9244c033524ecaf0f56d2b389}{ListeDeTache}}(\textcolor{keywordtype}{int}, \mbox{\hyperlink{class_tache}{Tache}}); \textcolor{comment}{//avec un int pour le max de tâche pour la liste, et la première tâche à ajouter dans la liste}}
+\DoxyCodeLine{39         \mbox{\hyperlink{class_liste_de_tache_acad7fbb9244c033524ecaf0f56d2b389}{ListeDeTache}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_liste_de_tache}{ListeDeTache}}\&); \textcolor{comment}{//par copie}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{comment}{//destructeur}}
+\DoxyCodeLine{42         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_liste_de_tache_aec68e550f1e7f470adb577e04bfdebac}{\string~ListeDeTache}}();}
+\DoxyCodeLine{43     }
+\DoxyCodeLine{44     \textcolor{comment}{//Accesseur}}
+\DoxyCodeLine{45         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_liste_de_tache_a9334c0fac362aeb380f7ea46be6387d0}{getMax}}();}
+\DoxyCodeLine{46         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_liste_de_tache_a6ddb53044baf190b8c27f645a11c14e3}{getProchain}}();}
+\DoxyCodeLine{47         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_liste_de_tache_ad25f8a817c37ffab6605a3d2668484e8}{getNb}}();}
+\DoxyCodeLine{48         \mbox{\hyperlink{class_tache}{Tache}} * \mbox{\hyperlink{class_liste_de_tache_a61cee62a36bd333b0416be8bb66ecf84}{getListe}}();}
+\DoxyCodeLine{49     }
+\DoxyCodeLine{50     \textcolor{comment}{//Méthodes}}
+\DoxyCodeLine{51         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_liste_de_tache_a2b812ad18731f56b47ec734cf36a351e}{AjouterTache}}(\mbox{\hyperlink{class_tache}{Tache}});}
+\DoxyCodeLine{52         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_liste_de_tache_a37375cadb9ac12004c25826f294fe154}{TraiterTache}}();}
+\DoxyCodeLine{53         }
+\DoxyCodeLine{54         \textcolor{keyword}{friend} ostream \& \mbox{\hyperlink{class_liste_de_tache_a569ab43782240ee117f092bec022e7b8}{operator<<}}(ostream\& os, \textcolor{keyword}{const} \mbox{\hyperlink{class_liste_de_tache}{ListeDeTache}}\& lt);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56         \mbox{\hyperlink{class_tache}{Tache}} \mbox{\hyperlink{class_liste_de_tache_a79ff35632fabb7a481ecc8b2a9d134c6}{operator[]}}(\textcolor{keywordtype}{int} \textcolor{keyword}{const});}
+\DoxyCodeLine{57         \mbox{\hyperlink{class_liste_de_tache}{ListeDeTache}}\& \mbox{\hyperlink{class_liste_de_tache_a740811298199bb3c1d321b66a6ff0c7f}{operator+=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_tache}{Tache}}\&);}
+\DoxyCodeLine{58         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_liste_de_tache_adf652c4131ab4b4c3da214e65ede0ff7}{operator-\/-\/}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{59 \};}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

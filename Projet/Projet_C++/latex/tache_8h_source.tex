@@ -1,0 +1,55 @@
+\hypertarget{tache_8h_source}{}\doxysection{tache.\+h}
+\mbox{\hyperlink{tache_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef TACHE\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define TACHE\_H}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{comment}{//*****************//}}
+\DoxyCodeLine{20 \textcolor{comment}{//** CLASS Tache **//}}
+\DoxyCodeLine{21 \textcolor{comment}{//*****************//}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{27 \textcolor{keyword}{class }\mbox{\hyperlink{class_tache}{Tache}}\{}
+\DoxyCodeLine{28     \textcolor{keyword}{private}:}
+\DoxyCodeLine{29         \textcolor{keywordtype}{string} nom; \textcolor{comment}{//Nom de la tâche}}
+\DoxyCodeLine{30         \textcolor{keywordtype}{string} description; \textcolor{comment}{//Description de la tâche}}
+\DoxyCodeLine{31         \textcolor{keywordtype}{int} priorite; \textcolor{comment}{//priorité de la tâche, c'est-\/à-\/dire son importance}}
+\DoxyCodeLine{32     }
+\DoxyCodeLine{33     \textcolor{keyword}{public}:}
+\DoxyCodeLine{34     \textcolor{comment}{//constructeur}}
+\DoxyCodeLine{35         \mbox{\hyperlink{class_tache_a20ed613186582c368557a4e4e00152d8}{Tache}}(); \textcolor{comment}{//de base}}
+\DoxyCodeLine{36         \mbox{\hyperlink{class_tache_a20ed613186582c368557a4e4e00152d8}{Tache}}(\textcolor{keywordtype}{string}, \textcolor{keywordtype}{string}, \textcolor{keywordtype}{int}); \textcolor{comment}{//avec un nom, description et priorité}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{comment}{//destructeur}}
+\DoxyCodeLine{39         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_tache_a7ff832b739f8365acbe60275c7868c63}{\string~Tache}}();}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{comment}{//Accesseur}}
+\DoxyCodeLine{42         \textcolor{keywordtype}{string} \mbox{\hyperlink{class_tache_adf05de3e1b00d72aae83808eae230c0e}{getName}}();}
+\DoxyCodeLine{43         \textcolor{keywordtype}{string} \mbox{\hyperlink{class_tache_a9bb40bb71e7829bb16b9c8eaa1d1198f}{getDescription}}();}
+\DoxyCodeLine{44         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_tache_ad95e0b1b0630f05943e7672f65cb18b0}{getPriorite}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{comment}{//Mutateur}}
+\DoxyCodeLine{47         \textcolor{keywordtype}{void} setName(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{48         \textcolor{keywordtype}{void} setDescription(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{49         \textcolor{keywordtype}{void} setPriorite(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{comment}{//Méthodes}}
+\DoxyCodeLine{52         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_tache_a83d61a3c51087ff7a4f4e5b46ddf8c20}{traiter}}();}
+\DoxyCodeLine{53        }
+\DoxyCodeLine{54         \textcolor{keyword}{friend} ostream \& \mbox{\hyperlink{class_tache_ae92a21db72f30be89cbfefc0077ca133}{operator<<}}(ostream\& os, \textcolor{keyword}{const} \mbox{\hyperlink{class_tache}{Tache}}\& t);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_tache_ac45987e769188ae476b0d9691786a005}{operator==}}(\mbox{\hyperlink{class_tache}{Tache}} \textcolor{keyword}{const}\&);}
+\DoxyCodeLine{57         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_tache_a5a239da88dfde9c836cbd9cea387b3d7}{operator!=}}(\mbox{\hyperlink{class_tache}{Tache}} \textcolor{keyword}{const}\&);}
+\DoxyCodeLine{58         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_tache_a25157a2dc7700649222a3213e0b2457e}{operator<=}}(\mbox{\hyperlink{class_tache}{Tache}} \textcolor{keyword}{const}\&);}
+\DoxyCodeLine{59         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_tache_a22cdb23bb29cb09e976199edd8352e18}{operator>=}}(\mbox{\hyperlink{class_tache}{Tache}} \textcolor{keyword}{const}\&);}
+\DoxyCodeLine{60         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_tache_a267015135c3c0b4a1910411af6023c1d}{operator<}}(\mbox{\hyperlink{class_tache}{Tache}} \textcolor{keyword}{const}\&);}
+\DoxyCodeLine{61         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_tache_afc79d6cc3e555bbfeaaae76993dbe0e4}{operator>}}(\mbox{\hyperlink{class_tache}{Tache}} \textcolor{keyword}{const}\&);}
+\DoxyCodeLine{62 \};}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

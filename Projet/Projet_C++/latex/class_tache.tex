@@ -1,0 +1,285 @@
+\hypertarget{class_tache}{}\doxysection{Référence de la classe Tache}
+\label{class_tache}\index{Tache@{Tache}}
+
+
+Création de la structure d\textquotesingle{}une \mbox{\hyperlink{class_tache}{Tache}} définie par un nom (string), description (string) et une priorité (int).  
+
+
+
+
+{\ttfamily \#include $<$tache.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tache_a20ed613186582c368557a4e4e00152d8}\label{class_tache_a20ed613186582c368557a4e4e00152d8}} 
+{\bfseries Tache} ()
+\begin{DoxyCompactList}\small\item\em Construction d\textquotesingle{}un nouvel objet \mbox{\hyperlink{class_tache}{Tache}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tache_a5cb48453be44371ca2d491367bba944c}{Tache}} (string, string, int)
+\begin{DoxyCompactList}\small\item\em Construction d\textquotesingle{}un nouvel objet \mbox{\hyperlink{class_tache}{Tache}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tache_a7ff832b739f8365acbe60275c7868c63}\label{class_tache_a7ff832b739f8365acbe60275c7868c63}} 
+virtual {\bfseries $\sim$\+Tache} ()
+\begin{DoxyCompactList}\small\item\em Destruction de l\textquotesingle{}objet de \mbox{\hyperlink{class_tache}{Tache}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_tache_adf05de3e1b00d72aae83808eae230c0e}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Accesseur du nom de cette tâche. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_tache_a9bb40bb71e7829bb16b9c8eaa1d1198f}{get\+Description}} ()
+\begin{DoxyCompactList}\small\item\em Accesseur de la description de cette tâche. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_tache_ad95e0b1b0630f05943e7672f65cb18b0}{get\+Priorite}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur de la priorité de cette tâche. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tache_abdbe857d74b23898ca9056abfd5c0782}\label{class_tache_abdbe857d74b23898ca9056abfd5c0782}} 
+void {\bfseries set\+Name} (string)
+\item 
+\mbox{\Hypertarget{class_tache_a06b12ef2753036a6f075d6ce17471986}\label{class_tache_a06b12ef2753036a6f075d6ce17471986}} 
+void {\bfseries set\+Description} (string)
+\item 
+\mbox{\Hypertarget{class_tache_abc3c25658e173c6a42740ffcf4dbdb16}\label{class_tache_abc3c25658e173c6a42740ffcf4dbdb16}} 
+void {\bfseries set\+Priorite} (int)
+\item 
+int \mbox{\hyperlink{class_tache_a83d61a3c51087ff7a4f4e5b46ddf8c20}{traiter}} ()
+\begin{DoxyCompactList}\small\item\em Traitement correct de la tâche si la probabilité est inférieur à 4/5. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tache_ac45987e769188ae476b0d9691786a005}{operator==}} (\mbox{\hyperlink{class_tache}{Tache}} const \&)
+\begin{DoxyCompactList}\small\item\em Comparaison des priorités entre 2 tâches pour savoir si elles sont égales. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tache_a5a239da88dfde9c836cbd9cea387b3d7}{operator!=}} (\mbox{\hyperlink{class_tache}{Tache}} const \&)
+\begin{DoxyCompactList}\small\item\em Comparaison des priorités entre 2 tâches pour savoir si les priorités sont différentes. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tache_a25157a2dc7700649222a3213e0b2457e}{operator$<$=}} (\mbox{\hyperlink{class_tache}{Tache}} const \&)
+\begin{DoxyCompactList}\small\item\em Comparaison des priorités entre 2 tâches pour savoir si la priorité de la tâche1 (this) est inférieure ou égale à la priorité de la tâche2 (t) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tache_a22cdb23bb29cb09e976199edd8352e18}{operator$>$=}} (\mbox{\hyperlink{class_tache}{Tache}} const \&)
+\begin{DoxyCompactList}\small\item\em Comparaison des priorités entre 2 tâches pour savoir si la priorité de la tâche1 (this) est supérieure ou égale à la priorité de la tâche2 (t) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tache_a267015135c3c0b4a1910411af6023c1d}{operator$<$}} (\mbox{\hyperlink{class_tache}{Tache}} const \&)
+\begin{DoxyCompactList}\small\item\em Comparaison des priorités entre 2 tâches pour savoir si la priorité de la tâche1 (this) est inférieure strictement à la priorité de la tâche2 (t) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tache_afc79d6cc3e555bbfeaaae76993dbe0e4}{operator$>$}} (\mbox{\hyperlink{class_tache}{Tache}} const \&)
+\begin{DoxyCompactList}\small\item\em Comparaison des priorités entre 2 tâches pour savoir si la priorité de la tâche1 (this) est supérieur strictement à la priorité de la tâche2 (t) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_tache_ae92a21db72f30be89cbfefc0077ca133}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_tache}{Tache}} \&t)
+\begin{DoxyCompactList}\small\item\em Opérateur d\textquotesingle{}affichage d\textquotesingle{}une \mbox{\hyperlink{class_tache}{Tache}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Création de la structure d\textquotesingle{}une \mbox{\hyperlink{class_tache}{Tache}} définie par un nom (string), description (string) et une priorité (int). 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_tache_a5cb48453be44371ca2d491367bba944c}\label{class_tache_a5cb48453be44371ca2d491367bba944c}} 
+\index{Tache@{Tache}!Tache@{Tache}}
+\index{Tache@{Tache}!Tache@{Tache}}
+\doxysubsubsection{\texorpdfstring{Tache()}{Tache()}}
+{\footnotesize\ttfamily Tache\+::\+Tache (\begin{DoxyParamCaption}\item[{string}]{n,  }\item[{string}]{d,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+
+
+Construction d\textquotesingle{}un nouvel objet \mbox{\hyperlink{class_tache}{Tache}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em n} & Le nom de la tâche \\
+\hline
+{\em d} & la description de la tâche \\
+\hline
+{\em p} & la priorité de la tâche \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_tache_a9bb40bb71e7829bb16b9c8eaa1d1198f}\label{class_tache_a9bb40bb71e7829bb16b9c8eaa1d1198f}} 
+\index{Tache@{Tache}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!Tache@{Tache}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily string Tache\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Accesseur de la description de cette tâche. 
+
+\begin{DoxyReturn}{Renvoie}
+string la description de la tâche 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tache_adf05de3e1b00d72aae83808eae230c0e}\label{class_tache_adf05de3e1b00d72aae83808eae230c0e}} 
+\index{Tache@{Tache}!getName@{getName}}
+\index{getName@{getName}!Tache@{Tache}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Tache\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Accesseur du nom de cette tâche. 
+
+\begin{DoxyReturn}{Renvoie}
+string le nom de la tâche 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tache_ad95e0b1b0630f05943e7672f65cb18b0}\label{class_tache_ad95e0b1b0630f05943e7672f65cb18b0}} 
+\index{Tache@{Tache}!getPriorite@{getPriorite}}
+\index{getPriorite@{getPriorite}!Tache@{Tache}}
+\doxysubsubsection{\texorpdfstring{getPriorite()}{getPriorite()}}
+{\footnotesize\ttfamily int Tache\+::get\+Priorite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de la priorité de cette tâche. 
+
+\begin{DoxyReturn}{Renvoie}
+int la valeur de la priorité de la tâche 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tache_a5a239da88dfde9c836cbd9cea387b3d7}\label{class_tache_a5a239da88dfde9c836cbd9cea387b3d7}} 
+\index{Tache@{Tache}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Tache@{Tache}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Tache\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tache}{Tache}} const \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Comparaison des priorités entre 2 tâches pour savoir si les priorités sont différentes. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true les priorités des 2 tâches sont différentes 
+
+false les priorités des 2 tâches ne sont pas différentes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tache_a267015135c3c0b4a1910411af6023c1d}\label{class_tache_a267015135c3c0b4a1910411af6023c1d}} 
+\index{Tache@{Tache}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Tache@{Tache}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Tache\+::operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tache}{Tache}} const \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Comparaison des priorités entre 2 tâches pour savoir si la priorité de la tâche1 (this) est inférieure strictement à la priorité de la tâche2 (t) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true la priorité la tâche1 (this) est inférieure strictement à la priorité de la tâche2 (t) 
+
+false la priorité la tâche1 (this) n\textquotesingle{}est pas inférieure strictement à la priorité de la tâche2 (t) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tache_a25157a2dc7700649222a3213e0b2457e}\label{class_tache_a25157a2dc7700649222a3213e0b2457e}} 
+\index{Tache@{Tache}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Tache@{Tache}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Tache\+::operator$<$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tache}{Tache}} const \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Comparaison des priorités entre 2 tâches pour savoir si la priorité de la tâche1 (this) est inférieure ou égale à la priorité de la tâche2 (t) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true la priorité de la tâche1 (this) est inférieure ou égale à la priorité de la tâche2 (t) 
+
+false la priorité de la tâche1 (this) n\textquotesingle{}est pas inférieure ou égale à la priorité de la tâche2 (t) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tache_ac45987e769188ae476b0d9691786a005}\label{class_tache_ac45987e769188ae476b0d9691786a005}} 
+\index{Tache@{Tache}!operator==@{operator==}}
+\index{operator==@{operator==}!Tache@{Tache}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Tache\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tache}{Tache}} const \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Comparaison des priorités entre 2 tâches pour savoir si elles sont égales. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true les priorités des 2 tâches sont égales 
+
+false les priorités des 2 tâches ne sont pas égales 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tache_afc79d6cc3e555bbfeaaae76993dbe0e4}\label{class_tache_afc79d6cc3e555bbfeaaae76993dbe0e4}} 
+\index{Tache@{Tache}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Tache@{Tache}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Tache\+::operator$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tache}{Tache}} const \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Comparaison des priorités entre 2 tâches pour savoir si la priorité de la tâche1 (this) est supérieur strictement à la priorité de la tâche2 (t) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true la priorité de la tâche1 (this) est supérieur strictement à la priorité de la tâche2 (t) 
+
+false la priorité de la tâche1 (this) n\textquotesingle{}est pas supérieur strictement à la priorité de la tâche2 (t) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tache_a22cdb23bb29cb09e976199edd8352e18}\label{class_tache_a22cdb23bb29cb09e976199edd8352e18}} 
+\index{Tache@{Tache}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Tache@{Tache}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Tache\+::operator$>$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tache}{Tache}} const \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Comparaison des priorités entre 2 tâches pour savoir si la priorité de la tâche1 (this) est supérieure ou égale à la priorité de la tâche2 (t) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true la priorité de la tâche1 (this) est supérieure ou égale à la priorité de la tâche2 (t) 
+
+false la priorité de la tâche1 (this) n\textquotesingle{}est pas supérieure ou égale à la priorité de la tâche2 (t) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tache_a83d61a3c51087ff7a4f4e5b46ddf8c20}\label{class_tache_a83d61a3c51087ff7a4f4e5b46ddf8c20}} 
+\index{Tache@{Tache}!traiter@{traiter}}
+\index{traiter@{traiter}!Tache@{Tache}}
+\doxysubsubsection{\texorpdfstring{traiter()}{traiter()}}
+{\footnotesize\ttfamily int Tache\+::traiter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Traitement correct de la tâche si la probabilité est inférieur à 4/5. 
+
+\begin{DoxyReturn}{Renvoie}
+int 1 \+: si le traitement c\textquotesingle{}est correctement bien passé et 0 \+: si le traitemnt ce n\textquotesingle{}est pas correctement bien passé. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentation des fonctions amies et associées}
+\mbox{\Hypertarget{class_tache_ae92a21db72f30be89cbfefc0077ca133}\label{class_tache_ae92a21db72f30be89cbfefc0077ca133}} 
+\index{Tache@{Tache}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Tache@{Tache}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_tache}{Tache}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Opérateur d\textquotesingle{}affichage d\textquotesingle{}une \mbox{\hyperlink{class_tache}{Tache}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em os} & référence sur un objet de type ostream \\
+\hline
+{\em t} & La \mbox{\hyperlink{class_tache}{Tache}} à afficher \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+ostream\& la référence de l\textquotesingle{}affichage de la \mbox{\hyperlink{class_tache}{Tache}} 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tache_8h}{tache.\+h}}\item 
+\mbox{\hyperlink{tache_8cpp}{tache.\+cpp}}\end{DoxyCompactItemize}
